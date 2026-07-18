@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LOS PATAS | Centro de Servicio Automotriz — Guayabo de Bagaces</title>
+
+<!-- Google Fonts: Anton for Headlines, Inter for UI -->
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<!-- Tailwind CDN + configuración -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="js/tailwind.config.js"></script>
+
+<!-- Estilos propios -->
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="font-body-md text-on-background">
+<!-- ============ NAVBAR (responsive) ============ -->
+<header class="sticky top-0 z-50 bg-surface border-b-4 border-on-background">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-xs max-w-[1280px] mx-auto">
+<a href="#inicio" class="flex items-center">
+<img src="img/LosPata.png" alt="Logo Los Patas — Centro de Servicio Automotriz" class="h-20 md:h-24 w-auto"/>
+</a>
+<nav class="hidden md:flex gap-md">
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors" href="#historia">HISTORIA</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors" href="#servicios">SERVICIOS</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors" href="#ventajas">VENTAJAS</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors" href="#contacto">CONTACTO</a>
+</nav>
+<div class="flex items-center gap-xs">
+<a href="#contacto" class="btn-racing-active px-sm md:px-md py-xs text-label-md md:text-body-md brutalist-shadow brutalist-shadow-hover active:scale-95 transition-all">
+            AGENDAR CITA
+        </a>
+<button id="menu-toggle" class="md:hidden flex items-center justify-center text-on-background" aria-label="Menú">
+<span class="material-symbols-outlined text-headline-sm">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile dropdown -->
+<nav id="mobile-menu" class="hidden md:hidden flex-col bg-on-background text-surface border-t-2 border-primary">
+<a class="font-label-md text-label-md px-margin-mobile py-sm border-b border-white/10 hover:text-primary" href="#historia">HISTORIA</a>
+<a class="font-label-md text-label-md px-margin-mobile py-sm border-b border-white/10 hover:text-primary" href="#servicios">SERVICIOS</a>
+<a class="font-label-md text-label-md px-margin-mobile py-sm border-b border-white/10 hover:text-primary" href="#ventajas">VENTAJAS</a>
+<a class="font-label-md text-label-md px-margin-mobile py-sm hover:text-primary" href="#contacto">CONTACTO</a>
+</nav>
+</header>
+
+<main id="inicio">
+<!-- ============ HERO ============ -->
+<section class="relative min-h-[560px] md:h-[819px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsYf_TE9E3Sbt3zXcRIGkAPll9tmAVA-ZbkV_AGd8B2E5ty6mUUG3VqJpyWZWz9UCcayn8ylD9gsSbkJzh0Q6b4VSnPKlFWzuFf1kQadXKyJjB-22_wGSlupOSsiMv5Oceyf8nlplq5ZuvNrNx3m_YxoBwz_B8rLzLIxowiAyXUqW2zHGeZf9ZNn-pt_6mbUKePu3CrUS15A2La2PseBGHCM6KjUNWng43jZg8UbnUyLkmhQsnHLzV1g')"></div>
+<div class="absolute inset-0 bg-on-background/50"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile max-w-4xl py-xl">
+<div class="h-1 w-24 bg-primary mb-md mx-auto"></div>
+<h1 class="font-display text-headline-lg-mobile md:text-display text-surface leading-none mb-md uppercase drop-shadow-lg">
+                    CALIDAD, ORDEN Y CONFIANZA
+                </h1>
+<p class="font-body-lg text-body-md md:text-body-lg text-surface mb-lg max-w-2xl mx-auto font-medium">
+                    Centro Multimarca Líder en Guayabo de Bagaces. Cuidamos cada detalle de su vehículo con precisión y trato profesional.
+                </p>
+<div class="flex justify-center">
+<a href="#contacto" class="btn-racing-active w-full sm:w-auto px-xl py-md text-headline-sm brutalist-shadow brutalist-shadow-hover active:scale-95">
+                        AGENDAR CITA
+                    </a>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full h-8 racing-checkered opacity-30"></div>
+</section>
+
+<!-- ============ HISTORIA ============ -->
+<section id="historia" class="py-xl px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-lg md:gap-xl items-center bg-surface-container-lowest">
+<div>
+<span class="text-primary font-bold tracking-widest text-label-md mb-xs block">NUESTRA TRAYECTORIA</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg uppercase mb-md text-on-background leading-tight">
+                    DESDE 2012 EVOLUCIONANDO PARA USTED
+                </h2>
+<div class="w-16 h-1 bg-primary mb-md"></div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md leading-relaxed">
+                    Lo que hoy es el <span class="font-bold">Centro de Servicio Automotriz Los Patas</span> comenzó en 2012 como un modesto lava-car familiar. Con el firme compromiso de ofrecer un servicio basado en la excelencia y la cercanía, nuestra empresa familiar fue creciendo, impulsada por la confianza de nuestros clientes en Guayabo de Bagaces.
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg leading-relaxed">
+                    A lo largo de más de una década nos transformamos en un centro de servicio multimarca integral, incorporando tecnología de punta y procesos estandarizados sin perder la esencia del trato personalizado que nos vio nacer.
+                </p>
+<div class="flex flex-col sm:flex-row gap-md">
+<div class="flex-1 text-center p-sm bg-primary text-white font-bold brutalist-shadow">
+                        12+ Años de Experiencia
+                    </div>
+<div class="flex-1 text-center p-sm bg-[#1A1A1A] text-white font-bold brutalist-shadow">
+                        Empresa Familiar
+                    </div>
+</div>
+</div>
+<div class="relative mt-md md:mt-0">
+<div class="absolute -top-4 -left-4 w-full h-full bg-primary/10"></div>
+<div class="relative brutalist-shadow border-4 border-on-background overflow-hidden h-[300px] md:h-[450px]">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDAFWCbHF3TtWt7Bdkv5XEuzLEb6qaXLmwYQg48HMkAPwR_95un0ckJzavAs2BjVVIp1uagui7y5_K33goyhOB2yDSnARbZizggNYEq3mPSLa-zHB4RZDqTMaiaeTuvUZp6WEkQfHVdgkRdO3KVTVLCqS4ZUIRbc7iuzXqFZ6bYWJygXjM1EazQ4RojA2TEvFA7SdTnoElWZSjrQBjUPnZ6MbSegmlomm3L2G-k1nmb2ITCDnCn8WiOkA')"></div>
+</div>
+</div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section id="servicios" class="py-xl px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="text-center mb-lg md:mb-xl">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg uppercase text-on-background">NUESTROS SERVICIOS</h2>
+<p class="font-label-md text-label-md text-primary-container tracking-[0.2em] mt-xs">PREVENCIÓN Y RENDIMIENTO</p>
+</div>
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-md">
+<!-- Servicio 1 -->
+<div class="bg-surface-container-lowest border-2 border-outline-variant hover:border-primary transition-all group">
+<div class="h-1 bg-primary w-full"></div>
+<div class="p-md text-center">
+<span class="material-symbols-outlined text-display text-primary mb-sm transition-transform group-hover:scale-110">build</span>
+<h3 class="font-headline-sm text-headline-sm mb-xs uppercase">MANTENIMIENTO PREVENTIVO</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Ajustes precisos y revisiones detalladas para prolongar la vida de su motor.</p>
+</div>
+</div>
+<!-- Servicio 2 -->
+<div class="bg-surface-container-lowest border-2 border-outline-variant hover:border-primary transition-all group">
+<div class="h-1 bg-primary w-full"></div>
+<div class="p-md text-center">
+<span class="material-symbols-outlined text-display text-primary mb-sm transition-transform group-hover:scale-110">oil_barrel</span>
+<h3 class="font-headline-sm text-headline-sm mb-xs uppercase">CENTRO DE FLUIDOS</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Cambio de aceite, filtros y revisión de niveles con productos premium.</p>
+</div>
+</div>
+<!-- Servicio 3 -->
+<div class="bg-surface-container-lowest border-2 border-outline-variant hover:border-primary transition-all group">
+<div class="h-1 bg-primary w-full"></div>
+<div class="p-md text-center">
+<span class="material-symbols-outlined text-display text-primary mb-sm transition-transform group-hover:scale-110">tire_repair</span>
+<h3 class="font-headline-sm text-headline-sm mb-xs uppercase">ALINEAMIENTO Y BALANCEO</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Lantería profesional para una conducción suave, segura y eficiente.</p>
+</div>
+</div>
+<!-- Servicio 4 -->
+<div class="bg-surface-container-lowest border-2 border-outline-variant hover:border-primary transition-all group">
+<div class="h-1 bg-primary w-full"></div>
+<div class="p-md text-center">
+<span class="material-symbols-outlined text-display text-primary mb-sm transition-transform group-hover:scale-110">local_car_wash</span>
+<h3 class="font-headline-sm text-headline-sm mb-xs uppercase">LAVACAR PROFESIONAL</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Limpieza profunda de interiores y exteriores con acabado profesional.</p>
+</div>
+</div>
+<!-- Servicio 5 -->
+<div class="bg-surface-container-lowest border-2 border-outline-variant hover:border-primary transition-all group">
+<div class="h-1 bg-primary w-full"></div>
+<div class="p-md text-center">
+<span class="material-symbols-outlined text-display text-primary mb-sm transition-transform group-hover:scale-110">precision_manufacturing</span>
+<h3 class="font-headline-sm text-headline-sm mb-xs uppercase">VENTA DE REPUESTOS</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Stock permanente de piezas originales y certificadas para toda marca.</p>
+</div>
+</div>
+<!-- CTA card -->
+<div class="bg-primary text-on-primary flex flex-col items-center justify-center text-center p-md brutalist-shadow">
+<span class="material-symbols-outlined text-display mb-sm">calendar_month</span>
+<h3 class="font-headline-sm text-headline-sm mb-xs uppercase">¿LISTO PARA SU CITA?</h3>
+<p class="font-body-md text-body-md mb-md opacity-90">Agende hoy y reciba una revisión de cortesía.</p>
+<a href="#contacto" class="bg-white text-primary font-display uppercase px-md py-xs">CONTÁCTENOS</a>
+</div>
+</div>
+</section>
+
+<!-- ============ VENTAJAS ============ -->
+<section id="ventajas" class="py-xl px-margin-mobile md:px-margin-desktop bg-[#1A1A1A] text-surface relative overflow-hidden">
+<div class="absolute inset-0 racing-checkered opacity-5"></div>
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-lg md:gap-xl relative z-10">
+<div class="flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg uppercase mb-lg leading-none border-l-8 border-primary pl-md">
+                        POR QUÉ <br/> ELEGIRNOS
+                    </h2>
+<p class="font-body-lg text-body-md md:text-body-lg text-surface-dim mb-lg">
+                        Aplicamos estándares de calidad y disciplina profesional en cada intervención, garantizando que su vehículo salga del taller mejor de lo que entró.
+                    </p>
+</div>
+<div class="grid grid-cols-1 gap-md">
+<div class="flex gap-md items-start p-md bg-[#2A2A2A] border-l-4 border-primary">
+<div class="font-display text-headline-md md:text-headline-lg text-primary leading-none">01</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase mb-xs">Atención Personalizada</h4>
+<p class="font-body-md text-body-md text-surface-dim opacity-80">Trato directo con mecánicos expertos que conocen su vehículo.</p>
+</div>
+</div>
+<div class="flex gap-md items-start p-md bg-[#2A2A2A] border-l-4 border-primary">
+<div class="font-display text-headline-md md:text-headline-lg text-primary leading-none">02</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase mb-xs">Transparencia Total</h4>
+<p class="font-body-md text-body-md text-surface-dim opacity-80">Inspección asistida: usted ve lo que nosotros vemos en su auto.</p>
+</div>
+</div>
+<div class="flex gap-md items-start p-md bg-[#2A2A2A] border-l-4 border-primary">
+<div class="font-display text-headline-md md:text-headline-lg text-primary leading-none">03</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase mb-xs">Facilidad de Pago</h4>
+<p class="font-body-md text-body-md text-surface-dim opacity-80">Múltiples opciones de financiamiento y pagos digitales rápidos.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section id="contacto" class="py-xl px-margin-mobile md:px-margin-desktop bg-surface max-w-[1280px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg md:gap-xl">
+<!-- Mapa (Google Maps embebido) -->
+<div class="h-[300px] md:h-[560px] brutalist-shadow border-4 border-on-background relative overflow-hidden">
+<iframe
+    title="Ubicación de Multiservicios Los Patas en Guayabo de Bagaces"
+    src="https://maps.google.com/maps?q=10.7117049,-85.2184708&z=16&hl=es&output=embed"
+    class="w-full h-full grayscale-[0.2]"
+    style="border:0;"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen>
+</iframe>
+<div class="absolute top-4 left-4 bg-on-background text-surface px-sm py-xs font-bold uppercase text-label-sm pointer-events-none">
+                        UBICACIÓN ESTRATÉGICA
+                    </div>
+<a href="https://maps.app.goo.gl/UPjQ6Fi6KkrmfN618" target="_blank" rel="noopener" class="absolute bottom-4 left-4 flex items-center gap-2 bg-primary text-on-primary px-sm py-xs font-bold uppercase text-label-sm brutalist-shadow hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-body-md">directions</span>
+                        Cómo llegar
+                    </a>
+</div>
+<!-- Detalles -->
+<div class="flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg uppercase mb-md text-on-background">VISÍTENOS</h2>
+<div class="space-y-md">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md uppercase text-primary">Dirección</h5>
+<a href="https://maps.app.goo.gl/UPjQ6Fi6KkrmfN618" target="_blank" rel="noopener" class="font-body-lg text-body-md md:text-body-lg hover:text-primary transition-colors">Ruta 164, Guayabo de Bagaces, Costa Rica</a>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined">chat</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md uppercase text-primary">WhatsApp Directo</h5>
+<p class="font-body-lg text-body-md md:text-body-lg">+506 6067 6305</p>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md uppercase text-primary">Horarios de Atención</h5>
+<p class="font-body-md text-body-md">Lunes a Sábado: 7:00 am - 6:00 pm</p>
+</div>
+</div>
+</div>
+<form class="mt-md space-y-sm" onsubmit="return enviarWhatsApp(event)">
+<p class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">chat</span>
+                        Escríbanos y le respondemos directo por WhatsApp
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-sm">
+<input id="f-nombre" class="w-full bg-surface-container border-2 border-outline-variant p-sm font-label-md focus:border-primary focus:ring-0" placeholder="NOMBRE" type="text" required/>
+<input id="f-telefono" class="w-full bg-surface-container border-2 border-outline-variant p-sm font-label-md focus:border-primary focus:ring-0" placeholder="TELÉFONO" type="tel" required/>
+</div>
+<textarea id="f-mensaje" class="w-full bg-surface-container border-2 border-outline-variant p-sm font-label-md focus:border-primary focus:ring-0" placeholder="¿CÓMO PODEMOS AYUDARLE?" rows="3"></textarea>
+<button class="w-full flex items-center justify-center gap-3 btn-racing-active text-headline-sm py-sm brutalist-shadow brutalist-shadow-hover active:scale-95 transition-all" type="submit">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.438h.008c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+                        ENVIAR POR WHATSAPP
+                    </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-lg flex flex-col md:grid md:grid-cols-3 items-center gap-md bg-[#1A1A1A] border-t-4 border-primary text-center md:text-left">
+<div class="flex flex-col items-center md:items-start md:justify-self-start">
+<img src="img/LosPata.png" alt="Logo Los Patas — Centro de Servicio Automotriz" class="h-24 w-auto brightness-0 invert"/>
+</div>
+<div class="flex flex-wrap justify-center gap-md md:justify-self-center">
+<a class="font-label-sm text-label-sm text-surface-container-low hover:text-primary-fixed-dim transition-colors" href="https://www.facebook.com/eurotallerlospata" target="_blank" rel="noopener">Facebook</a>
+<a class="font-label-sm text-label-sm text-surface-container-low hover:text-primary-fixed-dim transition-colors" href="#historia">Historia</a>
+<a class="font-label-sm text-label-sm text-surface-container-low hover:text-primary-fixed-dim transition-colors" href="#servicios">Servicios</a>
+<a class="font-label-sm text-label-sm text-surface-container-low hover:text-primary-fixed-dim transition-colors" href="#contacto">Citas</a>
+</div>
+<div class="font-label-sm text-label-sm text-surface-container-low md:justify-self-end md:text-right">
+            © 2012–2024 LOS PATAS. CALIDAD, ORDEN Y CONFIANZA.
+        </div>
+</footer>
+
+<!-- ============ WhatsApp FAB ============ -->
+<a id="wa-fab" class="fixed bottom-lg right-lg w-14 h-14 md:w-16 md:h-16 bg-[#25D366] text-white flex items-center justify-center rounded-none brutalist-shadow z-[100] transition-all duration-300 hover:scale-110 active:scale-95" href="https://wa.me/50660676305" target="_blank" aria-label="WhatsApp">
+<svg class="w-7 h-7 md:w-8 md:h-8 fill-current" viewbox="0 0 24 24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.438h.008c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+</svg>
+</a>
+
+<!-- Scripts del sitio -->
+<script src="js/main.js"></script>
+</body>
+</html>

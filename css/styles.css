@@ -1,0 +1,45 @@
+/* ============================================================
+   LOS PATAS — Estilos personalizados
+   Estilo "brutalist / racing" complementario a Tailwind (CDN)
+   ============================================================ */
+
+body {
+    background-color: #EDEAE2; /* Bone White */
+    color: #1A1A1A;            /* Carbon Black */
+    overflow-x: hidden;
+}
+
+/* Sombra dura estilo brutalista */
+.brutalist-shadow {
+    box-shadow: 4px 4px 0px #1A1A1A;
+}
+
+.brutalist-shadow-hover:hover {
+    box-shadow: 6px 6px 0px #1A1A1A;
+    transform: translate(-2px, -2px);
+}
+
+/* Patrón de bandera a cuadros (racing) */
+.racing-checkered {
+    background-image:
+        linear-gradient(45deg, #1A1A1A 25%, transparent 25%),
+        linear-gradient(-45deg, #1A1A1A 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #1A1A1A 75%),
+        linear-gradient(-45deg, transparent 75%, #1A1A1A 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    opacity: 0.05;
+}
+
+/* Botón principal (call to action) */
+.btn-racing-active {
+    background-color: #a2001c;
+    color: #ffffff;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}

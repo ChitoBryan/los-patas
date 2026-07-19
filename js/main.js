@@ -26,7 +26,8 @@
         e.preventDefault();
         // El menú móvil se cierra por su propio listener antes de esto,
         // así que la altura del header ya es la correcta al calcular.
-        const offset = header ? header.offsetHeight : 0;
+        // +24px de aire para que el título de la sección no quede pegado.
+        const offset = (header ? header.offsetHeight : 0) + 24;
         const top =
           target.getBoundingClientRect().top + window.pageYOffset - offset;
         window.scrollTo({ top: top, behavior: "smooth" });

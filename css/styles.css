@@ -43,3 +43,10 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+/* Deja aire bajo el header fijo al saltar a cada sección
+   (funciona tanto con el salto nativo como con scrollIntoView) */
+main[id],
+section[id] {
+    scroll-margin-top: 130px;
+}

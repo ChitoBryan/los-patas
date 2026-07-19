@@ -8,9 +8,31 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     initMobileMenu();
+    initSmoothAnchors();
     initButtonMicroInteractions();
     initWhatsAppFab();
   });
+
+  /* -------- Scroll suave con compensación del header fijo -------- */
+  function initSmoothAnchors() {
+    const header = document.querySelector("header");
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      const href = a.getAttribute("href");
+      if (!href || href === "#" || href.length < 2) return;
+
+      a.addEventListener("click", function (e) {
+        const target = document.querySelector(href);
+        if (!target) return;
+        e.preventDefault();
+        // El menú móvil se cierra por su propio listener antes de esto,
+        // así que la altura del header ya es la correcta al calcular.
+        const offset = header ? header.offsetHeight : 0;
+        const top =
+          target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: top, behavior: "smooth" });
+      });
+    });
+  }
 
   /* -------- Menú móvil -------- */
   function initMobileMenu() {
